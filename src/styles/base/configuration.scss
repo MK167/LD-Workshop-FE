@@ -1,0 +1,139 @@
+body,
+.p-component {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  @include reset-list;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.me-auto {
+  margin-inline-start: auto !important;
+  margin-inline-end: inherit !important;
+}
+
+
+/* START SCROLL */
+::-webkit-scrollbar {
+  width: 0.3125rem;
+}
+
+::-moz-scrollbar {
+  width: 0.3125rem;
+}
+
+::-o-scrollbar {
+  width: 0.3125rem;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-moz-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-o-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-o-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--whiteColor);
+  opacity: 0.7;
+}
+
+::-moz-scrollbar-thumb {
+  background: var(--whiteColor);
+  opacity: 0.7;
+}
+
+::-o-scrollbar-thumb {
+  background: var(--whiteColor);
+  opacity: 0.7;
+}
+
+.desc-color {
+  color: var(--grayColor7);
+  font-weight: 500;
+}
+
+.fs-5-2 {
+  font-size: 1.1rem;
+}
+
+/* END SCROLL */
