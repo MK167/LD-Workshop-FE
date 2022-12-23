@@ -17,7 +17,9 @@ export class LoaderInterceptor implements HttpInterceptor {
     this.loaderService.ShowSpinner();
     return next.handle(req).pipe(
       finalize(
-        () => this.loaderService.HideSpinner())
+        () =>
+        this.loaderService.HideSpinner()
+        )
     );
   }
 }

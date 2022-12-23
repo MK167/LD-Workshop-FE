@@ -5,12 +5,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     FooterComponent,
-    SliderComponent
+    SliderComponent,
+    SettingsComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     NavbarComponent,
     FooterComponent,
-    SliderComponent
+    SliderComponent,
+    SettingsComponent
   ]
 })
 export class CoreModule { }

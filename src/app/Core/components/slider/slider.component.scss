@@ -9,6 +9,13 @@
   background-position: 148% 190%;
 }
 
+.decore{
+  animation: rotate 5s infinite linear;
+  right: -12%;
+  top: -40%;
+  z-index: -1;
+}
+
 .hero-bg1 {
   background-image: url(../../../../assets/image/Decore1.svg);
 }
@@ -118,4 +125,29 @@
   min-height: 100vh;
 }
 
+.hero-section .person-img{
+  animation-name: move;
+  animation-duration: 1s;
+}
 /* ==========================START THINGS==================== */
+
+
+/* Start Animations */
+@keyframes move {
+  0% {
+    transform: translateX(-40px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

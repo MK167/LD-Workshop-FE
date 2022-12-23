@@ -7,11 +7,13 @@ import { MainLayoutRoutes } from './main-layout-routing.module'
 import { MainLayoutComponent } from './main-layout.component';
 import { HomeComponent } from '../../Pages/home/home.component';
 import { CoreModule } from '../../Core/components/core.module';
+import { NewsItemComponent } from 'src/app/Shared/components/news-item/news-item.component';
 
 @NgModule({
   declarations: [
     MainLayoutComponent,
-    HomeComponent
+    HomeComponent,
+    NewsItemComponent
   ],
   imports: [
     CommonModule,

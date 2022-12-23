@@ -22,10 +22,7 @@
             <div class="carousel-item min-h-100"
             *ngFor="let slide of slidesSorted; let i =index"
             [ngClass]="{
-              'active': slide.order == 1,
-              'hero-bg3': slide.category==='Outsource',
-              'hero-bg1': slide.category==='Marking',
-              'hero-bg2':slide.category==='Trendy Inside-Out'
+              'active': slide.order == 1
              }"
             >
               <div class="row align-items-center">
@@ -53,62 +50,29 @@
                       </div>
                     </div>
                   </div>
-                <div class="col-lg-6">
-                  <div class="d-lg-block d-none">
-                    <img src="{{slide.imgUrl}}" class="w-auto" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="carousel-item hero-bg2 min-h-100">
-              <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12">
-                    <div class="carousel-content">
-                      <strong class="trendy fs-5">TRENDY INSIDE-OUT</strong>
-                      <h1 class="title fw-bold title2_bg mb-4">Crafty Minds Reshaping</h1>
-                      <p class="desc-color lh-base mb-5 w-75 w-sm-100 lh-lg">Link Development, the global technology solutions provider and an A15 company.</p>
-                      <div class="d-flex gap-4 align-items-center">
-                        <button class="btn btn-main text-white px-3">Find out more</button>
-                        <div class="d-flex align-items-center gap-3">
-                          <i class="fas fa-play-circle text-danger fs-1"></i>
-                          <p class="desc-color">Play Demo</p>
+                  <div class="col-lg-6">
+                    <div>
+                      <div class="position-absolute decore">
+                        <img class="d-lg-block d-none" src="assets/image/decore3.svg"
+                        alt="bg-animation" *ngIf="slide.category==='Outsource'">
+                        <img class="d-lg-block d-none" src="assets/image/Decore1.svg"
+                        alt="bg-animation" *ngIf="slide.category==='Marking'">
+                        <img class="d-lg-block d-none" src="assets/image/decore2.svg"
+                        alt="bg-animation" *ngIf="slide.category==='Trendy Inside-Out'">
                         </div>
+                      <div class="d-lg-block d-none">
+                        <img src="{{slide.imgUrl}}" class="w-auto person-img" alt="">
                       </div>
                     </div>
                   </div>
-                <div class="col-lg-6">
+
+                <!-- <div class="col-lg-6">
                   <div class="d-lg-block d-none">
-                    <img src="assets/image/Traveller 1 (1).svg" class="w-auto" alt="">
+                    <img src="{{slide.imgUrl}}" class="w-auto person-img" alt="">
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
-
-            <div class="carousel-item hero-bg3 min-h-100">
-              <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12">
-                    <div class="carousel-content">
-                      <strong class="outsource fs-5">OUTSOURCE</strong>
-                      <h1 class="title fw-bold title3_bg mb-4">Crafty Minds Reshaping</h1>
-                      <p class="desc-color lh-base mb-5 w-75 w-sm-100 lh-lg">Link Development, the global technology solutions provider and an A15 company.</p>
-                      <div class="d-flex gap-4 align-items-center">
-                        <button class="btn btn-main text-white px-3">Find out more</button>
-                        <div class="d-flex align-items-center gap-3">
-                          <i class="fas fa-play-circle text-danger fs-1"></i>
-                          <p class="desc-color">Play Demo</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <div class="col-lg-6">
-                  <div class="d-lg-block d-none">
-                    <img src="assets/image/Traveller 1 (2).svg" class="w-auto" alt="">
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
 
 
           </div>

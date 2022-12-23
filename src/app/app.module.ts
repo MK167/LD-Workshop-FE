@@ -10,11 +10,13 @@ import { LoaderInterceptor } from './Shared/Interceptors/loader.interceptor';
 import { LoaderService } from './Shared/Services/loader.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SettingsComponent } from './Core/components/settings/settings.component';
+import { NewsItemComponent } from './Shared/components/news-item/news-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoaderComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
