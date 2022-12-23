@@ -17,14 +17,33 @@
               <div class="dot"></div>
             </button>
           </div>
+
           <div class="carousel-inner">
-            <div class="carousel-item active hero-bg1 min-h-100">
+            <div class="carousel-item min-h-100"
+            *ngFor="let slide of slidesSorted; let i =index"
+            [ngClass]="{
+              'active': slide.order == 1,
+              'hero-bg3': slide.category==='Outsource',
+              'hero-bg1': slide.category==='Marking',
+              'hero-bg2':slide.category==='Trendy Inside-Out'
+             }"
+            >
               <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="carousel-content">
-                      <strong class="marking fs-5 mt-3">MARKING</strong>
-                      <h1 class="title fw-bold title1_bg mb-4">25 Years of Business Growth</h1>
-                      <p class="desc-color lh-base mb-5 w-75 w-sm-100 lh-lg">Link Development, the global technology solutions provider and an A15 company, unveiled today that it has recently marked its Silver Jubilee anniversary.</p>
+                      <strong class="marking fs-5 mt-3"
+                      [ngStyle]="{'color':slide.colorCode }">
+                        {{slide?.category}}</strong>
+                      <h1 class="title fw-bold mb-4"
+                      [ngClass]="{
+                      'title3_bg': slide.category==='Outsource',
+                      'title1_bg': slide.category==='Marking',
+                      'title2_bg':slide.category==='Trendy Inside-Out'
+                     }"
+                      >{{slide?.title}}</h1>
+                      <p class="desc-color lh-base mb-5 w-75 w-sm-100 lh-lg">
+                        {{slide?.brief}}
+                      </p>
                       <div class="d-flex gap-4 align-items-center">
                         <button class="btn btn-main text-white px-3">Find out more</button>
                         <div class="d-flex align-items-center gap-3">
@@ -36,13 +55,13 @@
                   </div>
                 <div class="col-lg-6">
                   <div class="d-lg-block d-none">
-                    <img src="assets/image/Image.svg" class="w-auto" alt="">
+                    <img src="{{slide.imgUrl}}" class="w-auto" alt="">
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item hero-bg2 min-h-100">
+            <!-- <div class="carousel-item hero-bg2 min-h-100">
               <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="carousel-content">
@@ -88,7 +107,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
 
 

@@ -68,15 +68,19 @@
 }
 
 .carousel-indicators button.dot1 {
-  background-color: var(--darkMainColor);
+  background-color: var(--mediumOrangeColor);
+
 }
 
 .carousel-indicators button.dot2 {
   background-color: var(--softGreenColor);
+
 }
 
 .carousel-indicators button.dot3 {
-  background-color: var(--mediumOrangeColor);
+  background-color: var(--darkMainColor);
+
+
 }
 
 .carousel-indicators button.dot1::after,

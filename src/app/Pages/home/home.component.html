@@ -94,21 +94,17 @@
 
       <div>
         <ul class="nav nav-pills mt-3 mb-4 d-flex justify-content-center gap-4" id="pills-tab" role="tablist">
+
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All news</button>
+            <button class="nav-link active" id="pills-all-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-all" type="button"
+            role="tab" aria-controls="pills-all" aria-selected="true">All</button>
           </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-technology-tab" data-bs-toggle="pill" data-bs-target="#pills-technology" type="button" role="tab" aria-controls="pills-technology" aria-selected="false">Technology</button>
+          <li class="nav-item" role="presentation" *ngFor="let category of categories">
+            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">{{category.name}}</button>
           </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-sport-tab" data-bs-toggle="pill" data-bs-target="#pills-sport" type="button" role="tab" aria-controls="pills-sport" aria-selected="false">Sport</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-health-tab" data-bs-toggle="pill" data-bs-target="#pills-health" type="button" role="tab" aria-controls="pills-health" aria-selected="false">Health</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-economic-tab" data-bs-toggle="pill" data-bs-target="#pills-economic" type="button" role="tab" aria-controls="pills-economic" aria-selected="false">Economics</button>
-          </li>
+
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
