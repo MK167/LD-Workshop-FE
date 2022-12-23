@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { category } from '../Models/Icategory';
+import { News } from '../Models/Inews';
 
 @Injectable({
   providedIn: 'root'
@@ -10,20 +11,20 @@ import { category } from '../Models/Icategory';
 export class NewsService {
 
   BaseUrl = environment.apiUrl;
-  newsCategory = '91298d970c27e9a06518';
+  newsListing = 'd275425a434e02acf2f7';
   jsonFile = `${environment.jsonFile}news_listing.json`
 
   constructor(private Http: HttpClient) { }
 
-  getcategory(): Observable<category[]> {
+  getnewsListing(): Observable<News[]> {
     return this.Http
-      .get<category[]>(this.BaseUrl + this.newsCategory)
-      .pipe(map((objectValue: any) => objectValue.category));
+      .get<News[]>(this.BaseUrl + this.newsListing)
+      .pipe(map((objectValue: any) => objectValue.News));
   }
 
-  getcategoryFromJson(): Observable<category[]> {
+  getnewsListingFromJson(): Observable<News[]> {
     return this.Http
-      .get<category[]>(this.jsonFile)
-      .pipe(map((objectValue: any) => objectValue.newsCategory));
+      .get<News[]>(this.jsonFile)
+      .pipe(map((objectValue: any) => objectValue.News));
   }
 }

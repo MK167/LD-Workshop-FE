@@ -22,6 +22,7 @@
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
   border-radius: 10px;
+  cursor: pointer;
 }
 .media-desc {
   line-height: 1.4rem !important;
@@ -36,7 +37,7 @@
 .media-icon{
   color: #0ECEFF;
 }
-.media .tab{
+.media-card .tab{
   background-color: #E3E3E3;
   color: #181E4B;
 }

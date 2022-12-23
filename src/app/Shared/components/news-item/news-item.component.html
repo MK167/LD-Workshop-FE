@@ -1,15 +1,40 @@
-<div class="media-card">
+<div class="media-card" *ngIf="newsItem">
   <div>
-    <img src="assets/image/media1.png" class="media-img" alt="">
+    <img src="{{newsItem?.urlToImage}}" class="media-img" alt="">
   </div>
   <div class="px-3 py-4">
-    <p class="desc-color fw-bold media-desc">Let us commit to do our part and advance the promise of equality, justice</p>
+    <p class="desc-color fw-bold media-desc">{{newsItem?.title}}</p>
     <div class="d-flex align-items-center gap-2">
       <i class="fas fa-calendar-alt media-icon"></i>
-      <span class="text-muted">Wed 12 Aug 2022</span>
+      <span class="text-muted">{{newsItem?.publishedDate | date: 'EEE, d MMMM, y'}}</span>
     </div>
     <div class="mt-4 d-flex justify-content-between">
-      <span class="tab px-4 rounded-pill">Economics</span>
+      <div [ngSwitch]="newsItem?.categoryID">
+
+        <div *ngSwitchCase = '1'>
+          <span class="tab px-4 rounded-pill">Technology</span>
+        </div>
+
+        <div *ngSwitchCase = '2'>
+          <span class="tab px-4 rounded-pill">Sports</span>
+        </div>
+
+        <div *ngSwitchCase = '3'>
+          <span class="tab px-4 rounded-pill">Health</span>
+        </div>
+
+        <div *ngSwitchCase = '4'>
+          <span class="tab px-4 rounded-pill">Economics</span>
+        </div>
+
+        <div *ngSwitchCase = '5'>
+          <span class="tab px-4 rounded-pill">Art</span>
+        </div>
+        <div *ngSwitchDefault>
+          <span class="tab px-4 rounded-pill">{{newsItem?.categoryID}}</span>
+        </div>
+
+      </div>
       <div class="d-flex align-items-center gap-2">
         <i class="far fa-heart media-icon fs-5"></i>
         <i class="fas fa-share-alt media-icon"></i>
