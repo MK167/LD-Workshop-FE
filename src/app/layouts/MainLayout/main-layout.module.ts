@@ -5,16 +5,20 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MainLayoutRoutes } from './main-layout-routing.module'
 import { MainLayoutComponent } from './main-layout.component';
+import { HomeComponent } from '../../Pages/home/home.component';
+import { CoreModule } from '../../Core/components/core.module';
 
 @NgModule({
   declarations: [
-    MainLayoutComponent
+    MainLayoutComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(MainLayoutRoutes),
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    CoreModule
   ]
 })
 export class MainLayoutModule { }

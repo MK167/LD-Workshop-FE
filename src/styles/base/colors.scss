@@ -1,5 +1,7 @@
+// SASS Color
 $whiteColor: #FFFFFF;
 $blackColor: #000000;
+$navLink: #212832;
 
 $softMainColor: #D5AEE4;
 $darkMainColor: #F215B6;
@@ -28,3 +30,36 @@ $mediumBlueBlackColor: #181E4B;
 $darkBlueBlackColor: #14183E;
 
 
+// SCSS Color
+
+:root {
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --navLink: #212832;
+
+  --softMainColor: #D5AEE4;
+  --darkMainColor: #F215B6;
+
+  --grayColor1: #D9D9D9;
+  --grayColor2: #D9D9D9;
+  --grayColor3: #EEEEEE;
+  --grayColor4: #707070;
+  --grayColor5: #74747433;
+  --grayColor6: #353535;
+  --grayColor7: #5E6282;
+
+
+  --darkBlueColor: #2196F3;
+  --softBlueColor: #13BEFF;
+
+  --darkGreenColor: #4CAF50;
+  --softGreenColor: #A6E51C;
+
+  --darkYellowColor: #F0BB1F;
+  --mediumOrangeColor: #FF7C16;
+  --darkOrangeColor: #F15A2B;
+
+  --softBlackColor: #253776;
+  --mediumBlueBlackColor: #181E4B;
+  --darkBlueBlackColor: #14183E;
+}

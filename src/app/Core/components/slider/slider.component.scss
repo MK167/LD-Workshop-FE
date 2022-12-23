@@ -1,0 +1,117 @@
+/* ------------START TESTIMONIAL------------ */
+.hero-section {
+  min-height: 91vh;
+  margin-top: -100px;
+}
+
+.carousel-item {
+  background-repeat: no-repeat;
+  background-position: 148% 190%;
+}
+
+.hero-bg1 {
+  background-image: url(../../../../assets/image/Decore1.svg);
+}
+
+.hero-bg2 {
+  background-image: url(../../../../assets/image/decore2.svg);
+}
+
+.hero-bg3 {
+  background-image: url(../../../../assets/image/decore3.svg);
+}
+
+.title {
+  font-size: 75px;
+  color: var(--mediumBlueBlackColor);
+  background-repeat: no-repeat;
+  background-position: 100% 25%;
+}
+
+.title1_bg {
+  background-image: url(../../../../assets/image/title1_bg.svg);
+}
+
+.title2_bg {
+  background-image: url(../../../../assets/image/title2_bg.svg);
+}
+
+.title3_bg {
+  background-image: url(../../../../assets/image/title3_bg.svg);
+}
+
+.marking {
+  color: var(--darkMainColor);
+}
+
+.trendy {
+  color: var(--softGreenColor);
+}
+
+.outsource {
+  color: var(--mediumOrangeColor);
+}
+
+.carousel-indicators {
+  top: 70%;
+  left: 8vw;
+  margin: inherit !important;
+}
+
+.carousel-indicators button {
+  width: 30px !important;
+  height: 30px !important;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 10px !important;
+  opacity: 1 !important;
+}
+
+.carousel-indicators button.dot1 {
+  background-color: var(--darkMainColor);
+}
+
+.carousel-indicators button.dot2 {
+  background-color: var(--softGreenColor);
+}
+
+.carousel-indicators button.dot3 {
+  background-color: var(--mediumOrangeColor);
+}
+
+.carousel-indicators button.dot1::after,
+.carousel-indicators button.dot2::after {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  border-top: 3.5px dotted #353535;
+  height: 2px;
+  left: 100%;
+  top: 50%;
+}
+
+.carousel-indicators button.active {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.carousel-content {
+  padding-left: 8vw;
+}
+
+.btn-main {
+  background-color: var(--mediumOrangeColor);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hero-section img {
+  animation-name: move;
+  animation-duration: 1s;
+}
+
+.min-h-100 {
+  min-height: 100vh;
+}
+
+/* ==========================START THINGS==================== */

@@ -1,0 +1,23 @@
+/* =====================START NAVBAR======================= */
+.navbar {
+  padding: 0;
+  z-index: 20;
+}
+.navbar .logo {
+  width: 150px;
+}
+.navbar .nav-item .nav-link {
+  font-size: 16px;
+  padding: 0 15px;
+  color: #212832;
+}
+
+.dropdown-menu {
+  top: 60px !important;
+}
+.dropdown-menu .flag {
+  width: 19px;
+  height: 19px;
+  object-fit: cover;
+}
+/* =====================END NAVBAR======================= */

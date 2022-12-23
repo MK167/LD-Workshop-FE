@@ -13,10 +13,6 @@ import { SliderComponent } from './Core/components/slider/slider.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    NavbarComponent,
-    FooterComponent,
-    SliderComponent,
   ],
   imports: [
     BrowserModule,
