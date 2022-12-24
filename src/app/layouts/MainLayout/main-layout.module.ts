@@ -10,6 +10,7 @@ import { CoreModule } from '../../Core/components/core.module';
 import { NewsItemComponent } from 'src/app/Shared/components/news-item/news-item.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { NewsDetailsComponent } from 'src/app/Pages/news-details/news-details.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -19,7 +20,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     MainLayoutComponent,
     HomeComponent,
-    NewsItemComponent
+    NewsItemComponent,
+    NewsDetailsComponent
   ],
   imports: [
     CommonModule,

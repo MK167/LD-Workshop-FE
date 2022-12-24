@@ -1,0 +1,23 @@
+ <!-- -------------start news details--------- -->
+ <div class="news-details mt-3">
+  <div class="container">
+      <div class="p-5 news-details-content mb-5" *ngFor="let news of newsItem">
+          <div class="row">
+              <div class="col-md-5">
+                  <div class="news-img">
+                      <img src="{{news.urlToImage}}" class="w-100" alt="{{news.title}}">
+                  </div>
+              </div>
+              <div class="col-md-7">
+                  <div>
+                      <h3 class="mb-3 fw-bold" translate>{{news.title}}</h3>
+                      <p class="desc-color" translate>{{news.description}}</p>
+                      <br>
+                      <blockquote class="desc-color" translate>{{news.content}}</blockquote>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- -------------end news details--------- -->

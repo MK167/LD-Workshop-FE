@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   categories: NewsCategory[] = [];
   newsItem: newsItem[] = [];
   newsItemFilter: newsItem[] = [];
-  isClicked: boolean = false;
 
   constructor(
     private categoryService: CategoryService,
@@ -58,10 +57,4 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  getAllNews() {
-    this.NewsService.getnewsListingFromJson().subscribe((res: any) => {
-      this.newsItemFilter = res;
-      this.isClicked = !this.isClicked;
-    })
-  }
 }

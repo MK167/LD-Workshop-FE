@@ -14,4 +14,7 @@ export class NewsItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openDetails(){
+    console.log('news ITEM');
+  }
 }

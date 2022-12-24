@@ -8,6 +8,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SettingsComponent } from './settings/settings.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { FormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "../../../assets/i18n/", ".json");
@@ -23,6 +24,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CommonModule,
     RouterModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,

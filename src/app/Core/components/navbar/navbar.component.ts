@@ -21,8 +21,6 @@ export const ROUTES: RouteInfo[] = [
 
 export class NavbarComponent implements OnInit {
   public menuItems: any;
-  lang: string | null = localStorage.getItem('lang') ? localStorage.getItem('lang') : 'en';
-
   constructor(private router: Router, @Inject(DOCUMENT) private document: Document,
     private translateService: TranslateService) {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
@@ -33,7 +31,6 @@ export class NavbarComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.changeLang(String(this.lang));
   }
 
   changeLang(languageType: string) {

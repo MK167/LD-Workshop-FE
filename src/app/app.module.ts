@@ -15,6 +15,7 @@ import { NewsItemComponent } from './Shared/components/news-item/news-item.compo
 import { ErrorHandlerInterceptor } from './Shared/Interceptors/error-handler.interceptor';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { NewsDetailsComponent } from './Pages/news-details/news-details.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "../assets/i18n/", ".json");

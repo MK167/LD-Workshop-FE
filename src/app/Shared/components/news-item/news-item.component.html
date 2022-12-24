@@ -1,15 +1,15 @@
 <div class="media-card" *ngIf="newsItem">
   <div>
-    <img src="{{newsItem?.urlToImage}}" class="media-img" alt="{{newsItem?.title}}">
+    <img src="{{newsItem.urlToImage}}" class="media-img" alt="{{newsItem.title}}">
   </div>
   <div class="px-3 py-4">
-    <p class="desc-color fw-bold media-desc" translate>{{newsItem?.title}}</p>
+    <p class="desc-color fw-bold media-desc" translate>{{newsItem.title}}</p>
     <div class="d-flex align-items-center gap-2">
       <i class="fas fa-calendar-alt media-icon"></i>
-      <span class="text-muted">{{newsItem?.publishedDate | date: 'EEE, d MMMM, y'}}</span>
+      <span class="text-muted">{{newsItem.publishedDate | date: 'EEE, d MMMM, y'}}</span>
     </div>
     <div class="mt-4 d-flex justify-content-between">
-      <div [ngSwitch]="newsItem?.categoryID">
+      <div [ngSwitch]="newsItem.categoryID">
 
         <div *ngSwitchCase = '1'>
           <span class="tab px-4 rounded-pill" translate>Technology</span>
@@ -31,7 +31,7 @@
           <span class="tab px-4 rounded-pill" translate>Art</span>
         </div>
         <div *ngSwitchDefault>
-          <span class="tab px-4 rounded-pill">{{newsItem?.categoryID}}</span>
+          <span class="tab px-4 rounded-pill">{{newsItem.categoryID}}</span>
         </div>
 
       </div>
