@@ -30,22 +30,22 @@
                     <div class="carousel-content">
                       <strong class="marking fs-5 mt-3"
                       [ngStyle]="{'color':slide.colorCode }">
-                        {{slide?.category}}</strong>
+                        {{slide?.category | translate}}</strong>
                       <h1 class="title fw-bold mb-4"
                       [ngClass]="{
                       'title3_bg': slide.category==='Outsource',
                       'title1_bg': slide.category==='Marking',
                       'title2_bg':slide.category==='Trendy Inside-Out'
                      }"
-                      >{{slide?.title}}</h1>
-                      <p class="desc-color lh-base mb-5 w-75 w-sm-100 lh-lg">
-                        {{slide?.brief}}
+                     translate>{{slide?.title}}</h1>
+                      <p class="desc-color lh-base mb-5 w-75 w-sm-100 lh-lg" translate>
+                        {{slide?.brief | translate}}
                       </p>
                       <div class="d-flex gap-4 align-items-center">
-                        <button class="btn btn-main text-white px-3">Find out more</button>
+                        <button class="btn btn-main text-white px-3" translate>Find out more</button>
                         <div class="d-flex align-items-center gap-3">
                           <i class="fas fa-play-circle text-danger fs-1"></i>
-                          <p class="desc-color">Play Demo</p>
+                          <p class="desc-color" translate>Play Demo</p>
                         </div>
                       </div>
                     </div>
@@ -61,7 +61,7 @@
                         alt="bg-animation" *ngIf="slide.category==='Trendy Inside-Out'">
                         </div>
                       <div class="d-lg-block d-none">
-                        <img src="{{slide.imgUrl}}" class="w-auto person-img" alt="">
+                        <img src="{{slide.imgUrl}}" class="w-auto person-img" alt="{{slide.category}}">
                       </div>
                     </div>
                   </div>
@@ -79,12 +79,12 @@
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden" translate>Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden" translate>Next</span>
           </button>
         </div>
       </div>

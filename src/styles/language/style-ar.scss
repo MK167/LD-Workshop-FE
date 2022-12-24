@@ -1,0 +1,67 @@
+@import '~animate.css/animate.css';
+
+@import '../../styles/base/colors.scss';
+@import '../../styles/base/mixins.scss';
+@import '../../styles/base/configuration.scss';
+@import '../../styles/base/fonts.scss';
+
+body {
+  font-family: "Cairo", sans-serif !important;
+}
+
+.hero-section .decore{
+  left: -12% !important;
+  right: inherit !important;
+}
+
+.hero-section .person-img{
+  transform: scaleX(-1) !important;
+  animation-name: move !important;
+  animation-duration: 1s !important;
+}
+
+.carousel-content {
+  padding-right: 8vw !important;
+  padding-left: inherit !important;
+}
+
+.carousel-indicators {
+right: 8vw !important;
+left: inherit !important;
+}
+
+.carousel-indicators button.dot1::after,.carousel-indicators button.dot2::after{
+right: 100% !important;
+left: inherit !important;
+}
+
+
+.things-content{
+  background-image: url(../../assets/image/things-content-ar-bg.png) !important;
+  background-position: left !important;
+}
+
+.pe-lg-5 {
+  padding-left: 3rem!important;
+  padding-right: inherit!important;
+}
+
+.things-content .bi-arrow-right{
+transform: scaleX(-1) !important;
+}
+
+.text-end {
+text-align: left!important;
+}
+.media i{
+transform: scaleX(-1) !important;
+}
+@keyframes move {
+0% {
+  transform: translateX(40px) !important;
+}
+
+100% {
+  transform: translateX(0px) !important;
+}
+}
