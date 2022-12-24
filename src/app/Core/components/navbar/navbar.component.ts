@@ -21,10 +21,9 @@ export class NavbarComponent implements OnInit {
   public menuItems: any;
 
   constructor(private router: Router) {
-    console.log('44',this.menuItems)
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.router.events.subscribe((event) => {
-      console.log('45',this.menuItems)
+      // console.log('menu items',this.menuItems)
     });
   }
 

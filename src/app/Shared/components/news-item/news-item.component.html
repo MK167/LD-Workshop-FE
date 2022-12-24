@@ -1,6 +1,6 @@
 <div class="media-card" *ngIf="newsItem">
   <div>
-    <img src="{{newsItem?.urlToImage}}" class="media-img" alt="">
+    <img src="{{newsItem?.urlToImage}}" class="media-img" alt="{{newsItem?.title}}">
   </div>
   <div class="px-3 py-4">
     <p class="desc-color fw-bold media-desc">{{newsItem?.title}}</p>

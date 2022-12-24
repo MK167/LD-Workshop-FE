@@ -12,6 +12,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SettingsComponent } from './Core/components/settings/settings.component';
 import { NewsItemComponent } from './Shared/components/news-item/news-item.component';
+import { ErrorHandlerInterceptor } from './Shared/Interceptors/error-handler.interceptor';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,12 @@ import { NewsItemComponent } from './Shared/components/news-item/news-item.compo
     {
       provide: HTTP_INTERCEPTORS,
       useClass: LoaderInterceptor, multi: true
-    }],
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorHandlerInterceptor, multi: true
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
