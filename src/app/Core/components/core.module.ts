@@ -23,7 +23,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CommonModule,
     RouterModule,
     HttpClientModule,
-    TranslateModule.forRoot({
+    TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
